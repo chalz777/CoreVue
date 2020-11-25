@@ -1,16 +1,12 @@
-﻿//import { tabGroup } from '../VueComponents/tab-group.js'
-//import { travelerInfo } from '../VueComponents/traveler-info.js'
-//import { tripDetail } from '../VueComponents/trip-detail.js'
-//import { tripInfo } from '../VueComponents/trip-info.js'
-//import { flightDetails } from '../VueComponents/flight-details.js'
-//import { tripSummary } from '../VueComponents/trip-summary.js'
-//import { vueServer } from '../VueComponents/vue-server.js'
-import { routeInfo } from './route-info.js'
-import { attachmentMain } from './attachment-main.js'
-import { DataAccess } from '../../js/dataAccess.js'
-import { PersistRoutedDocumentObject, RoutedDocumentObject, ReviewDetailObject } from '../VueComponents/RoutedDoc.js'
+﻿
 
-Vue.use(Toasted);
+
+//import { routeInfo } from './route-info.js'
+//import { attachmentMain } from './attachment-main.js'
+//import { DataAccess } from '../../js/dataAccess.js'
+//import { PersistRoutedDocumentObject, RoutedDocumentObject, ReviewDetailObject } from '../VueComponents/RoutedDoc.js'
+
+//Vue.use(Toasted);
 //Vue.use(vueServer);
 
 var router = new VueRouter({

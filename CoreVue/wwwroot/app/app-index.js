@@ -1,10 +1,12 @@
-﻿//import { tabGroup } from '../VueComponents/tab-group.js'
+﻿
+//import { tabGroup } from '../VueComponents/tab-group.js'
 //import { travelerInfo } from '../VueComponents/traveler-info.js'
 //import { tripDetail } from '../VueComponents/trip-detail.js'
 //import { tripInfo } from '../VueComponents/trip-info.js'
 //import { flightDetails } from '../VueComponents/flight-details.js'
 //import { tripSummary } from '../VueComponents/trip-summary.js'
 //import { vueServer } from '../VueComponents/vue-server.js'
+import { Vue } from '../lib/vue.js'
 
 
 //import { routeInfo } from './route-info.js'
@@ -19,9 +21,10 @@
 //    mode: 'history',
 //    routes: []
 //});
-window.vm = new Vue({
+//window.vm = new Vue({
+var app = new Vue({
     //vuetify: new Vuetify(),
-    router,
+    //router,
     el: '#app',
     components: {  },
     data: function () {

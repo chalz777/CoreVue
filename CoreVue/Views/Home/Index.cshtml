@@ -8,12 +8,24 @@
 </div>
 
 <div id="app">
+    {{ message }}
 </div>
 
+@section Scripts{
+    <script src="~/lib/vue.js"></script>
+  
+}
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue.js!'
+        }
+    })
+</script>
 
 
-<environment include="Development">
-    <script src="~/app/app-index.js"></script>
-</environment>
+@*<script type="module" src="~/app/app-index.js"></script>*@
+<environment include="Development"></environment>
 
 

@@ -6,7 +6,7 @@
 //import { flightDetails } from '../VueComponents/flight-details.js'
 //import { tripSummary } from '../VueComponents/trip-summary.js'
 //import { vueServer } from '../VueComponents/vue-server.js'
-import { Vue } from '../lib/vue.js'
+//import { Vue } from '../lib/vue.js'
 
 
 //import { routeInfo } from './route-info.js'
@@ -22,13 +22,14 @@ import { Vue } from '../lib/vue.js'
 //    routes: []
 //});
 //window.vm = new Vue({
-var app = new Vue({
+new Vue({
     //vuetify: new Vuetify(),
     //router,
     el: '#app',
     components: {  },
     data: function () {
-        return {        
+        return {       
+            message: 'Hello Vue.js!'
         }
     },
     methods: {

@@ -2,7 +2,9 @@
   "version": "1.0.0",
   "name": "asp.net",
   "private": true,
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^5.9.0"
+  },
   "dependencies": {
     "toastr": "^2.1.4",
     "vuetify": "^2.3.19"

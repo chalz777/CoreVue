@@ -52,8 +52,6 @@ new Vue({
 		<div class="text-center">
 			<h1>Route Correspondence</h1>
 		</div>
-	
-			
 	</div>
 `
 });

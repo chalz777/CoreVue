@@ -43,7 +43,8 @@ namespace CoreVue
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseDefaultFiles();
+       
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

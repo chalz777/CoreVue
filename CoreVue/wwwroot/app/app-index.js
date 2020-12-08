@@ -28,8 +28,8 @@ new Vue({
     el: '#app',
     components: {  },
     data: function () {
-        return {       
-            message: 'Hello Vue.js!'
+        return {                 
+            message: ' is tghe this chanfHello Vue.js!'
         }
     },
     methods: {

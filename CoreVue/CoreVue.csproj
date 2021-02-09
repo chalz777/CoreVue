@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="todo-ninja\**" />
+    <Content Remove="todo-ninja\**" />
+    <EmbeddedResource Remove="todo-ninja\**" />
+    <None Remove="todo-ninja\**" />
     <TypeScriptCompile Remove="node_modules\**" />
+    <TypeScriptCompile Remove="todo-ninja\**" />
   </ItemGroup>
 
   <ItemGroup>

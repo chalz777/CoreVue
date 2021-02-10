@@ -16,6 +16,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\app\api\" />
     <Folder Include="wwwroot\app\components\" />
+    <Folder Include="wwwroot\client-app\" />
   </ItemGroup>
 
   <ItemGroup>

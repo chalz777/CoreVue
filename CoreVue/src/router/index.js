@@ -9,6 +9,11 @@ const routes = [
         component: Home
     },
     {
+        path: '/ssrnm',
+        name: 'SsrnmMain',
+        component: () => import(/* webpackChunkName: "about" */ '../views/SsrnmMain.vue')
+    },
+    {
         path: '/about',
         name: 'About',
         // route level code-splitting
@@ -18,7 +23,8 @@ const routes = [
     }
 ];
 const router = new VueRouter({
-    routes
+    mode: 'history',
+    routes: routes
 });
 export default router;
 //# sourceMappingURL=index.js.map

@@ -1,16 +1,15 @@
 import Vue from 'vue';
 import App from './App.vue';
-import vuetify from '@/plugins/vuetify' // path to vuetify export
-import moment from 'moment'
-
-Vue.config.productionTip = true;
-Vue.filter('formatDate', function(value) {
-    if (value) {
-      return moment(String(value)).format('MM/DD/YYYY hh:mm')
-    }
-  });
-
+import router from './router';
+import vuetify from './plugins/vuetify';
+import vuetoastify from './plugins/toastify';
+import globals from './plugins/globals';
+Vue.config.productionTip = false;
+Vue.use(vuetoastify);
+Vue.use(globals);
 new Vue({
+    router,
     vuetify,
     render: h => h(App)
 }).$mount('#app');
+//# sourceMappingURL=main.js.map

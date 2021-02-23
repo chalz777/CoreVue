@@ -30,21 +30,19 @@
                     </tr>
                 </tbody>
             </template>
-        </v-data-table>
-        <ValertSnack />
+        </v-data-table>        
 
     </v-card>
 </template>
 
 <script lang="ts">
     import Vue from 'vue'
-    import ValertSnack from '@/components/ValertSnack.vue'; 
+    
     import * as DataAccess from '../assets/js/dataAccess'
 
     export default Vue.extend({        
         name: "trials-table",
-        components: {
-            ValertSnack,
+        components: {            
         },
         data() {
             return {

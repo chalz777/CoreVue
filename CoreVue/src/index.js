@@ -6,4 +6,4 @@ function createChild() {
     return element;
 }
 
-document.body.appendChild(createChild());
+//document.body.appendChild(createChild());

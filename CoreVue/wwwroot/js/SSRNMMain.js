@@ -260,7 +260,7 @@ const attachmentMain = {
 					link.setAttribute('href', url);
 					link.setAttribute('download', fileName);
 					link.style.visibility = 'hidden';
-		//			document.body.appendChild(link);
+					document.body.appendChild(link);
 					link.click();
 					document.body.removeChild(link);
 				}

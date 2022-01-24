@@ -20,7 +20,7 @@
                     <v-list-item link v-for="item in navItems" :key="item.id" @click="navItem_onclick(item)">
                         <v-list-item-content>
                             <v-list-item-title>
-                                <i class="material-icons" :style="{'font-size':item.isize + 'px'}">{{item.icon}}</i>        
+                                <span :class="'mdi mdi-' + item.icon" :style="{'font-size':item.isize + 'px'}"></span>                             
                                 {{item.title}}
                             </v-list-item-title>
                         </v-list-item-content>
@@ -34,15 +34,15 @@
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="hidden-sm-and-down">
                     <v-btn>
-                        <i class="material-icons" style="font-size:24px">account_balance</i>  
+                        <span class="mdi mdi-ship-wheel" style="font-size:24px"></span>                    
                         <router-link to="/ssrnm">SSRNM Main</router-link>
                     </v-btn>
                     <v-btn>
-                        <i class="material-icons" style="font-size:20px">directions_boat</i>
+                        <span class="mdi mdi-anchor" style="font-size:24px"></span>                        
                         <router-link to="/">Atlantic Fleet</router-link>
                     </v-btn>
-                    <v-btn>
-                        <i class="material-icons" style="font-size:22px">help_outline</i>
+                    <v-btn>                      
+                        <span class="mdi mdi-account-question" style="font-size:24px"></span>
                         <router-link to="/about">About</router-link>
                     </v-btn>
                 </v-toolbar-items>
@@ -64,48 +64,48 @@
     /* eslint-disable vue/no-unused-components */
     import Vue from 'vue';
     import SsrnmMain from '@/views/SsrnmMain.vue'; 
-   
+    
 
 export default Vue.extend({
 
   name: 'App',
   components: {
-      SsrnmMain,     
+      SsrnmMain,   
   },  
     data: () => ({
         navItems: [
             {
                 id: 0,
                 link: "landing-page",
-                icon: "account_balance",
+                icon: "ship-wheel",
                 isize: "22",
             title: " - SSRNM Main"
             , header: "ATLANTIC FLEET"
         }, {
             id: 1,
                 link: "",
-                icon: "directions_boat",
+                icon: "anchor",
                 isize: "20",
             title: " - ATLANTIC FLEET"
             , header: "ATLANTIC FLEET"
         }, {
             id: 2,
                 link: "trials-table",
-                icon: "compare_arrows",
-                isize: "19",
+                icon: "google-assistant",
+                isize: "18",
             title: " - TRIAL HISTORY"
             , header: "ATLANTIC FLEET"
         }, {
                 id: 3,
                 link: "asw-table",
-                icon: "gps_not_fixed",
+                icon: "google-circles",
                 isize: "19",
                 title: " - ASW OVERVIEW"
                 , header: "ATLANTIC FLEET"
         },{
                 id: 4,
                 link: "non-asw-table",
-                icon: "invert_colors",
+                icon: "google-chrome",
                 isize: "19",
                 title: " - NON ASW OVERVIEW"
                 , header: "NON ATLANTIC FLEET"
@@ -113,35 +113,35 @@ export default Vue.extend({
         }, {
                 id: 5,
                 link: "search-form",
-                icon: "search",
+                icon: "briefcase-search",
                 isize: "19",
                 title: " - SEARCH"
                 , header: "SEARCH"
         }, {
                 id: 6,
                 link: "reports-list",
-                icon: "line_weight",
+                icon: "database-plus",
                 isize: "19",
                 title: " - REPORTS LIST"
                 , header: "REPORTS LIST"
         }, {
                 id: 7,
                 link: "last-15-trials",
-                icon: "play_for_work",
+                icon: "history",
                 isize: "19",
                 title: " - LAST 15 TRIALS"
                 , header: "LAST 15 TRIALS"
         }, {
                 id: 8,
                 link: "contacts",
-                icon: "group",
-                isize: "19",
+                icon: "account",
+                isize: "21",
                 title: " - CONTACTS"
                 , header: "CONTACTS"
         }, {
                 id: 9,
                 link: "coming-soon",
-                icon: "watch",
+                icon: "hammer-wrench",
                 isize: "19",
                 title: " - COMING SOON"
                 , header: "COMING SOON"

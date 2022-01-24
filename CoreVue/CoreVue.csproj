@@ -34,6 +34,6 @@
     <PackageReference Include="VueCliMiddleware" Version="5.0.0" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="npm run build" />
-  </Target>
+    <!--<Exec Command="npm run build" />-->
+	</Target>
 </Project>

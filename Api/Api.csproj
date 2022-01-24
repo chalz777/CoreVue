@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <StartupObject>Api.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <Compile Remove="Repository\**" />
+    <Content Remove="Models\**" />
+    <Content Remove="Repository\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Repository\**" />
+    <None Remove="Models\**" />
+    <None Remove="Repository\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Castle.Core" Version="4.4.0" />
+    <PackageReference Include="KDT.Core.Authentication" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>

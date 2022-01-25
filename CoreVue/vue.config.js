@@ -1,4 +1,6 @@
 module.exports = {
+    outputDir: "wwwroot",
+    filenameHashing: false,
     "transpileDependencies": [
         "vuetify"
     ],

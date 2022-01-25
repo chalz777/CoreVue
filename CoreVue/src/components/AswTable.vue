@@ -2,7 +2,7 @@
   
     <v-card>
         <v-card-title>
-            ASW Overview nana
+            ASW Overview banana
             <v-spacer />
             <v-text-field v-model="search"
                           label="Search"

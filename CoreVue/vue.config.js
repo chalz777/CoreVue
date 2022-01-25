@@ -2,6 +2,7 @@ const { CleanWebpackPlugin } = require("./node_modules/clean-webpack-plugin/dist
 
 module.exports = {
     outputDir: "wwwroot",
+    filenameHashing: false,
     "transpileDependencies": [
         "vuetify"
     ],

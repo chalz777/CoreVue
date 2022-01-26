@@ -14,9 +14,20 @@
     <TypeScriptCompile Remove="node_modules\**" />
     <TypeScriptCompile Remove="todo-ninja\**" />
   </ItemGroup>
-  
-
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="VueCliMiddleware" Version="5.0.0" />
+  </ItemGroup>
+
+ <!-- <ItemGroup>
     <Content Include="node_modules\%40babel\code-frame\package.json" />
     <Content Include="node_modules\%40babel\compat-data\data\corejs2-built-ins.json" />
     <Content Include="node_modules\%40babel\compat-data\data\corejs3-shipped-proposals.json" />
@@ -1317,7 +1328,7 @@
     <Content Include="node_modules\yorkie\node_modules\yallist\package.json" />
     <Content Include="node_modules\yorkie\package.json" />
     <Content Include="node_modules\yorkie\src\hooks.json" />
-  </ItemGroup>
+  </ItemGroup>-->
 
   <ItemGroup>
     <Folder Include="wwwroot\app\api\" />
@@ -1325,7 +1336,7 @@
     <Folder Include="wwwroot\client-app\" />
   </ItemGroup>
 
-  <ItemGroup>
+  <!--<ItemGroup>
     <None Include="node_modules\%40babel\code-frame\lib\index.js" />
     <None Include="node_modules\%40babel\code-frame\LICENSE" />
     <None Include="node_modules\%40babel\code-frame\README.md" />
@@ -21895,22 +21906,11 @@
     <None Include="node_modules\yorkie\src\utils\get-hook-script.js" />
     <None Include="node_modules\yorkie\src\utils\is.js" />
     <None Include="node_modules\yorkie\__tests__\index.js" />
-  </ItemGroup>
+  </ItemGroup>-->
 
-  <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="8.1.1" />
-    <PackageReference Include="EntityFramework" Version="6.4.4" />
-    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
-    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.1.2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.0" />
-    <PackageReference Include="VueCliMiddleware" Version="5.0.0" />
-  </ItemGroup>
 
-  <ItemGroup>
+
+ <!-- <ItemGroup>
     <TypeScriptCompile Include="node_modules\%40babel\parser\typings\babel-parser.d.ts" />
     <TypeScriptCompile Include="node_modules\%40babel\types\lib\index-ts3.7.d.ts" />
     <TypeScriptCompile Include="node_modules\%40babel\types\lib\index.d.ts" />
@@ -23521,7 +23521,7 @@
     <TypeScriptCompile Include="node_modules\yargs\build\lib\yerror.d.ts" />
     <TypeScriptCompile Include="node_modules\yargs\node_modules\is-fullwidth-code-point\index.d.ts" />
     <TypeScriptCompile Include="node_modules\yargs\node_modules\string-width\index.d.ts" />
-  </ItemGroup>
+  </ItemGroup>-->
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <!--<Exec Command="npm run build" />-->
 	</Target>

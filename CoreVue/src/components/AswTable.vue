@@ -11,14 +11,16 @@
                           single-line
                           hide-details />
         </v-card-title>
-        
+        <tiptap-vuetify v-model="content"
+                        :extensions="extensions" />
+
         <v-data-table :headers="headers"
                       :items="itemsDisplay"
                       :search="search"
                       item-key="id"
                       class="elevation-1"
                       @click:row="row_onClick">
-            
+
             <template v-slot:slot:default>
                 <tbody>
                     <tr class="pointer" v-for="item in items" :key="item.id">
@@ -43,16 +45,36 @@
 <script lang="ts">
 
     import Vue from 'vue'
+    import { TiptapVuetify, Heading, Bold, Italic, Strike, Underline, Code, Paragraph, BulletList, OrderedList, ListItem, Link, Blockquote, HardBreak, HorizontalRule, History } from 'tiptap-vuetify'
     import * as DataAccess from '../assets/js/dataAccess'   
 
     export default Vue.extend({
         name: "asw-table",
-        components: {
-                
-        },
+        components: { TiptapVuetify },        
         data() {
             return {          
                 search: '',
+                extensions: [
+                    History,
+                    Blockquote,
+                    Link,
+                    Underline,
+                    Strike,
+                    Italic,
+                    ListItem,
+                    BulletList,
+                    OrderedList,
+                    [Heading, {
+                        options: {
+                            levels: [1, 2, 3]
+                        }
+                    }],
+                    Bold,
+                    Code,
+                    HorizontalRule,
+                    Paragraph,
+                    HardBreak
+                ],
                 slots: [
                     'body',
                     'body.append',

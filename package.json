@@ -369,6 +369,7 @@
       "integrity": "sha512-tOhfEwEzFLJzf6d1ZPkYfGj+FWhIpBux9ppoP3rlclw3Z0BZv3N7b7030Z1kYth+6rDuAsXUFr+d0VE6Ed1ikw==",
       "resolved": "https://registry.npmjs.org/w3c-keyname/-/w3c-keyname-2.2.4.tgz",
       "version": "2.2.4"
-    }
+    },
+    "webpack-bundle-analyzer": "^4.5.0"
   }
 }
